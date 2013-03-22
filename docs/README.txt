@@ -16,7 +16,7 @@ Keithley 6485 libraries are used to communicate to the picoamp meters, while the
 Utilities library contains various VIs and Controls useful to all LabVIEW applications
 and are not specific to ABLE or the overall application.
 
-The folders included with the source code are: "docs," "configs," "logs," "images", "libs", and "src".
+The folders included with the source code are: "docs," "configs", "images", "libs", and "src".
 The docs folder contains all of the documentation relavent to ABLE. This includes
 datasheets and instruction manuals for hardware, presentations with diagrams of the
 instrumentation and electronics, and examples. The configs folder contains example
