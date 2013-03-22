@@ -48,12 +48,14 @@ The application can be downloaded as a pre-built ZIP file from the project websi
  # Follow the procedure to build the application in Build section
  # Copy the contents of the "builds" folder to any public location on the hard disk.
  # Create a link or shortcut to the "ABLE.exe" file and place it on the desktop or in the start menu.
+ # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the Configuration File section.
 
 ==== From Pre-Built ZIP ====
 
  # Copy the "ABLE_vX.X.X.zip" file to any public location on the hard disk.
  # Unzip the "ABLE_vX.X.X.zip" file. A "ABLE" folder will be created within the same location as the ZIP file.
  # Create a link or shortcut to the "ABLE.exe" file and place it on the desktop or in the start menu.
+ # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the Configuration File section.
 
 == Configuration File == 
 
