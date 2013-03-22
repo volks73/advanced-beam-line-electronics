@@ -1,0 +1,53 @@
+#summary Standard Help
+
+= Advanced Beam Line Electronics (ABLE) Application =
+
+== Introduction ==
+
+== Requirements ==
+
+=== Development ===
+
+ * [http://www.ni.com/labview/ LabVIEW] 2012 or newer Development Environment 
+ * Application Builder (for application build only)
+ * [http://joule.ni.com/nidu/cds/view/p/id/2914/lang/en NI-VISA driver]
+ * [http://joule.ni.com/nidu/cds/view/p/id/3811/lang/en NI-DAQmx driver]
+ * Measurement and Automation Explorer, aka MAX, (comes with NI-VISA)
+
+=== Deployment and Use ===
+
+ * [http://joule.ni.com/nidu/cds/view/p/id/3433/lang/en LabVIEW 2012] or newer run-time engine (freely available)
+ * [http://joule.ni.com/nidu/cds/view/p/id/2914/lang/en NI-VISA] driver
+ * Measurement and Automation Explorer, aka MAX, (comes with NI-VISA)
+ * [http://joule.ni.com/nidu/cds/view/p/id/3811/lang/en NI-DAQmx driver]
+
+== Build ==
+
+Download the source code from the project's Subversion [http://code.google.com/p/advanced-beam-line-electronics/source/checkout repository] and then follow the instructions below.
+
+ # Install the [https://www.ni.com/labview LabVIEW] 2012 or newer Development Environment from [http://www.ni.com National Instruments, Inc]. 
+ # Install the [http://sine.ni.com/nips/cds/view/p/lang/en/nid/10731 Application Builder]. 
+ # Open the ABLE project file, "ABLE.lvproj", located in the root folder of the source code.
+ # Expand the "Build Specifications" node in the project tree.
+ # Highlight, right-click on "Application", and select "Build" on the context menu that appears.
+ # The build process will start and create a "ABLE.exe" file, a "ABLE.ini" file, a "data" folder, a "ABLE.log" file, and a "ABLE.aliases" file, in the "builds" folder, located in the root folder of the source code.
+
+== Install ==
+
+The application can be downloaded as a pre-built ZIP file from the project website or built from the source code following the procedure outlined in the [Build] section. After obtaining the ZIP file, follow the instructions below.
+
+==== From Source ====
+
+ # Follow the procedure to build the application in [Build] section
+ # Copy the contents of the "builds" folder to any public location on the hard disk.
+ # Create a link or shortcut to the "ABLE.exe" file and place it on the desktop or in the start menu.
+
+==== From Pre-Built ZIP ====
+
+ # Copy the "ABLE_vX.X.X.zip" file to any public location on the hard disk.
+ # Unzip the "ABLE_vX.X.X.zip" file. A "ABLE" folder will be created within the same location as the ZIP file.
+ # Create a link or shortcut to the "ABLE.exe" file and place it on the desktop or in the start menu.
+
+== Versions ==
+
+Verison 1.0.0 is the base code and feature set.
