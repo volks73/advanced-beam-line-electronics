@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<experiment xmlns="http://engr.wisc.edu/ABLE/Version/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ABLE1.xsd">
+
+  <operator>Example 2 User</operator>
+
+  <project>An example experiment for a longer, more realistic run with an initial run.</project>
+
+  <targetDose>1.500E-5</targetDose>
+
+  <sample>
+    <name>Example 2</name>
+    <description>Description</description>
+    <molarMass units="g/mol">58.000</molarMass>
+    <density units="g/cm^3">8.016</density>
+    <irradiationArea units="cm^2">1.4559</irradiationArea>
+    <srimDamagePeak units="disp*ions/cm">7.470E-5</srimDamagePeak>
+  </sample>
+
+  <beamLine>
+    <type>Radiation Damage</type>
+    <ion>H</ion>
+    <chargeState>1</chargeState>
+    <totalSourceIonEnergy units="kV">15.0</totalSourceIonEnergy>
+  </beamLine>
+
+  <runs>
+    <run>
+      <timing>
+        <start>12/31/2012 14:44:01</start>
+        <stop>12/31/2012 14:44:08</stop>
+      </timing>
+      <dose units="dpa">
+        <start>0.000E+0</start>
+        <stop>1.118E-12</stop>
+      </dose>
+      <fluence units="ions/cm^2">
+        <start>0.000E+0</start>
+        <stop>1.245E+15</stop>
+      </fluence>
+      <totalCharge units="A">
+        <start>0.000E+0</start>
+        <stop>2.904E-4</stop>
+      </totalCharge>
+    </run>
+  </runs>
+
+</experiment>

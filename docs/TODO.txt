@@ -1,0 +1,12 @@
+= Advanced Beam Line Electronics (ABLE) TODO =
+
+ # Add pressure readings
+ # Add descriptions to all indicators
+ # Add descriptions to all controls
+ # Implement Pressure tab chart
+ # Implement Current tab chart
+ # Implement Temperature tab chart
+ # Add pressure alarms
+ # Add output control
+ # Add automatic optimziation of beam profile and centering
+ # Integrate IR camera feed into main application

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<experiment xmlns="http://engr.wisc.edu/ABLE/Version/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ABLE1.xsd">
+
+  <!-- The name of the operator or owner of this sample and experiment -->
+  <operator>Example 1 User</operator>
+
+  <!-- A description of the overall project or experiment -->
+  <project>An example for a simple approximate 3 minute experiment.</project>
+
+  <!-- The target, or desired dose in DPA for the sample. This value is used -->
+  <!-- to determine if the experiment is done. -->
+  <targetDose>1.500E-11</targetDose>
+
+  <!-- Information about the sample. All values are required. -->
+  <sample>
+    <name>Example 1</name>
+    <description>Description</description>
+    <molarMass units="g/mol">58.000</molarMass>
+    <density units="g/cm^3">8.016</density>
+    <irradiationArea units="cm^2">1.4559</irradiationArea>
+    <srimDamagePeak units="disp*ions/cm">7.470E-5</srimDamagePeak>
+  </sample>
+
+  <!-- Information about the beam line. All values are required. -->
+  <beamLine>
+    <type>Radiation Damage</type>
+    <ion>H</ion>
+    <chargeState>1</chargeState>
+    <totalSourceIonEnergy units="kV">15.0</totalSourceIonEnergy>
+  </beamLine>
+
+  <!-- A list of runs, or exposures, for the sample, which are listed in oldest first, most -->
+  <!-- recent last. -->
+  <runs/>
+
+</experiment>

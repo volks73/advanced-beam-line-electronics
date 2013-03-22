@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="experiment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="operator" type="xs:string" minOccurs="1" maxOccurs="1" use="required"/>
+				<xs:element name="project" type="xs:string" minOccurs="1" maxOccurs="1" use="required"/>
+				<xs:element name="targetDose" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required"/>
+				<xs:element name="sample" use="required">
+					<xs:complexType>
+						<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" use="required"/>
+						<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1" use="required"/>
+						<xs:element name="molarMass" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required">
+							<xs:complexType>
+								<xs:attribute name="units" type="xs:string" fixed="g/mol"/> 
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="density" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required">
+							<xs:complexType>
+								<xs:attribute name="units" type="xs:string" fixed="g/cm^3"/> 
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="irradiationArea" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required">
+							<xs:complexType>
+								<xs:attribute name="units" type="xs:string" fixed="cm^2"/> 
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="srimDamagePeak" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required">
+							<xs:complexType>
+								<xs:attribute name="units" type="xs:string" fixed="disp*ions/cm"/> 
+							</xs:complexType>
+						</xs:element>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="beamLine" use="required">
+					<xs:complexType>
+						<xs:element name="type" type="xs:string" minOccurs="1" maxOccurs="1" use="required"/>
+						<xs:element name="ion" type="xs:string" minOccurs="1" maxOccurs="1" use="required"/>
+						<xs:element name="chargeState" type="xs:integer" minOccurs="1" maxOccurs="1" use="required" default="1"/>
+						<xs:element name="totalSourceIonEnergy" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required">
+							<xs:complexType>
+								<xs:attribute name="units" type="xs:string" fixed="kV"/> 
+							</xs:complexType>
+						</xs:element>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="runs" use="required">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="run" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="timing" use="required">
+											<xs:complexType>
+													<xs:sequence>
+														<xs:element name="start" type="xs:string" minOccurs="1" maxOccurs="1" use="required"/>
+														<xs:element name="stop" type="xs:string" minOccurs="1" maxOccurs="1" use="required"/>
+													</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="dose" use="required">
+											<xs:complexType>
+													<xs:sequence>
+														<xs:element name="start" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required"/>
+														<xs:element name="stop" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required"/>
+													</xs:sequence>
+													<xs:attribute name="units" type="xs:string" fixed="dpa"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="fluence" use="required">
+											<xs:complexType>
+													<xs:sequence>
+														<xs:element name="start" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required"/>
+														<xs:element name="stop" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required"/>
+													</xs:sequence>
+													<xs:attribute name="units" type="xs:string" fixed="ions/cm^2""/> 
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="totalCharge" use="required">
+											<xs:complexType>
+													<xs:sequence>
+														<xs:element name="start" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required"/>
+														<xs:element name="stop" type="xs:decimal" minOccurs="1" maxOccurs="1" use="required"/>
+													</xs:sequence>
+													<xs:attribute name="units" type="xs:string" fixed="C"/> 
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
