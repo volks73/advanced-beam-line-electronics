@@ -9,7 +9,7 @@ and Controls are organized depending on their usage within the application. Thre
 
 The folders included with the source code are: "_docs_", "_configs_", "_images_", "_libs_", and "_src_". The _docs_ folder contains all of the documentation relevant to ABLE. The configs folder contains example experiment files and application configuration files (.ini).  The _images_ folder contains all the images used throughout the application. The _libs_ folder contains the external libraries used to build the application, specifically the Keithley-6485, Keithley-6482, and Utilities libraries. The _src_ folder contains all of the source code files (VIs and Controls) for the application.
 
-The GUI is divided into three screens, or tabs. The first is "_Overview_". The _Overview_ screen displays all of the hardware data and relevant experiment data on one screen. The _Overview_ screen is intended to give a brief view of all of the conditions within ABLE. There are no inputs on the _Overview_ screen. The second screen is "_Experiment_". The _Experiment_ screen controls the experiment configuration. Experiment files can be created, opened, saved, and closed from the _Experiment_ screen. The third screen is "_Alarms_". Alarms can be set for temperature with a high and low limit values.
+The GUI is divided into three screens, or tabs. The first is _Overview_. The _Overview_ screen displays all of the hardware data and relevant experiment data on one screen. The _Overview_ screen is intended to give a brief view of all of the conditions within ABLE. There are no inputs on the _Overview_ screen. The second screen is _Experiment_. The _Experiment_ screen controls the experiment configuration. Experiment files can be created, opened, saved, and closed from the _Experiment_ screen. The third screen is _Alarms_. Alarms can be set for temperature with a high and low limit values.
 
 == Requirements ==
 
@@ -41,26 +41,25 @@ Download the source code from the project's Subversion [http://code.google.com/p
 
 == Install ==
 
-The application can be downloaded as a pre-built ZIP file from the project website or built from the source code following the procedure outlined in the [WikiSyntax#Build] section. After obtaining the ZIP file, follow the instructions below.
+The application can be downloaded as a pre-built ZIP file from the project website or built from the source code following the procedure outlined in the [Readme#Build] section. After obtaining the ZIP file, follow the instructions below.
 
 ==== From Source ====
 
  # Follow the procedure to build the application in Build section
  # Copy the contents of the "builds" folder to any public location on the hard disk.
  # Create a link or shortcut to the "ABLE.exe" file and place it on the desktop or in the start menu.
- # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the [WikiSyntax#Configuration_File] section.
+ # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the [Readme#Configuration_File] section.
 
 ==== From Pre-Built ZIP ====
 
  # Copy the "ABLE_vX.X.X.zip" file to any public location on the hard disk.
  # Unzip the "ABLE_vX.X.X.zip" file. A "ABLE" folder will be created within the same location as the ZIP file.
  # Create a link or shortcut to the "ABLE.exe" file and place it on the desktop or in the start menu.
- # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the [WikiSyntax#Configuration_File] section.
+ # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the [Readme#Configuration_File] section.
 
 == Configuration File == 
 
-A configuration file (.ini) is used to configure settings for the ABLE application. Note, this is different from the experiment configuration file (.xml), which is used to configure and control an experiment, not the overall application. The "_ABLE.ini_" configuration file must be present and must be located in the root folder, same folder as the executable (.exe), for the application to function properly. Removal of parameters, or keys, from the configuration file may also hinder proper function of the application.
-If ABLE is running on a computer other than the computer connected to the hardware, then the "simulate" key should be set to "True". Simulated hardware data will be generated instead of monitoring the hardware. Different alarm sounds can be selected for the temperature alarms using the "temperature-alarm-sound-file". The delay may need to be adjusted based on the sound file length. A list and information about the various key-value pairs are listed in the table below.
+A configuration file (.ini) is used to configure settings for the ABLE application. Note, this is different from the experiment configuration file (.xml), which is used to configure and control an experiment, not the overall application. The "_ABLE.ini_" configuration file must be present and must be located in the root folder, same folder as the executable (.exe), for the application to function properly. Removal of parameters, or keys, from the configuration file may also hinder proper function of the application. If ABLE is running on a computer other than the computer connected to the hardware, then the "simulate" key should be set to "True". Simulated hardware data will be generated instead of monitoring the hardware. Different alarm sounds can be selected for the temperature alarms using the "temperature-alarm-sound-file". The delay may need to be adjusted based on the sound file length. A list and information about the various key-value pairs are listed in the table below.
 
 || *Section* || *Key* || *Value Type* || *Description* ||
 || Display || default-monitor || Integer 0-N || The monitor to display the main application window. A "0" indicates the primary monitor should be used. _N_ is the maximum number of connected monitors to the computer ||
@@ -75,12 +74,9 @@ If ABLE is running on a computer other than the computer connected to the hardwa
 || Alarms || temperature-alarm-sound-file || OS-specific path || The sound file to play when a temperature alarm is activated. ||
 || Alarms || temperature-alarm-sound-delay || Integer 0-N. || The delay between repeated plays of the temperature alarm sound. The sound will continue to play until the alarm conditions have failed or the alarm is turned off. This value should be adjusted so that the alarm sound is not continuously playing. _N_ is in seconds. The length of time of the sound should be taken into consideration. ||
 
-
 == Logs ==
 
-The logs folder has two sub-folders: "Hardware" and "Experiment". The data collected from all of the hardware is logged to a comma-separated values (.csv) file with a timestamp used as the file name. The file is automatically created on the start of the application. The files are automatically organized into sub-folders for the year, the month, and the day of the month the file was created. The organization of the files and naming convention eliminates overwriting of previous logs. The data collected during the running of an experiment is also saved in a similar format and organization as the hardware logs. The experiment
-file is created automatically on the start of an experiment. Note, the experiment log is separate from the experiment file (.xml), which is the configuration file for the experiment. The experiment log is a record of the calculations and the experiment progress and is mostly used for debugging and troubleshooting. The start and stop values for an
-experiment are saved in the experiment file (.xml) as runs.
+The logs folder has two sub-folders: "Hardware" and "Experiment". The data collected from all of the hardware is logged to a comma-separated values (.csv) file with a timestamp used as the file name. The file is automatically created on the start of the application. The files are automatically organized into sub-folders for the year, the month, and the day of the month the file was created. The organization of the files and naming convention eliminates overwriting of previous logs. The data collected during the running of an experiment is also saved in a similar format and organization as the hardware logs. The experiment file is created automatically on the start of an experiment. Note, the experiment log is separate from the experiment file (.xml), which is the configuration file for the experiment. The experiment log is a record of the calculations and the experiment progress and is mostly used for debugging and troubleshooting. The start and stop values for an experiment are saved in the experiment file (.xml) as runs.
 
 == Versions ==
 
