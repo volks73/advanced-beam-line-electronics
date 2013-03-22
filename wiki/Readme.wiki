@@ -41,21 +41,21 @@ Download the source code from the project's Subversion [http://code.google.com/p
 
 == Install ==
 
-The application can be downloaded as a pre-built ZIP file from the project website or built from the source code following the procedure outlined in the Build section. After obtaining the ZIP file, follow the instructions below.
+The application can be downloaded as a pre-built ZIP file from the project website or built from the source code following the procedure outlined in the [WikiSyntax#Build] section. After obtaining the ZIP file, follow the instructions below.
 
 ==== From Source ====
 
  # Follow the procedure to build the application in Build section
  # Copy the contents of the "builds" folder to any public location on the hard disk.
  # Create a link or shortcut to the "ABLE.exe" file and place it on the desktop or in the start menu.
- # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the Configuration File section.
+ # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the [WikiSyntax#Configuration_File] section.
 
 ==== From Pre-Built ZIP ====
 
  # Copy the "ABLE_vX.X.X.zip" file to any public location on the hard disk.
  # Unzip the "ABLE_vX.X.X.zip" file. A "ABLE" folder will be created within the same location as the ZIP file.
  # Create a link or shortcut to the "ABLE.exe" file and place it on the desktop or in the start menu.
- # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the Configuration File section.
+ # Open the "ABLE.ini" file located in the root folder of the application and set the values for each key-value pair as directed below in the [WikiSyntax#Configuration_File] section.
 
 == Configuration File == 
 
@@ -78,17 +78,8 @@ If ABLE is running on a computer other than the computer connected to the hardwa
 
 == Logs ==
 
-The logs folder has two sub-folders: "Hardware" and "Experiment". The data collected from all of the
-hardware is logged to a comma-separated values (.csv) file with a timestamp used as the
-file name. The file is automatically created on the start of the application. The files
-are automatically organized into sub-folders for the year, the month, and the day of the
-month the file was created. The organization of the files and naming convention eliminates
-overwriting of previous logs. The data collected during the running of an experiment
-is also saved in a similar format and organization as the hardware logs. The experiment
-file is created automatically on the start of an experiment. Note, the experiment log is
-separate from the experiment file (.xml), which is the configuration file for the 
-experiment. The experiment log is a record of the calculations and the experiment progress
-and is mostly used for debugging and troubleshooting. The start and stop values for an
+The logs folder has two sub-folders: "Hardware" and "Experiment". The data collected from all of the hardware is logged to a comma-separated values (.csv) file with a timestamp used as the file name. The file is automatically created on the start of the application. The files are automatically organized into sub-folders for the year, the month, and the day of the month the file was created. The organization of the files and naming convention eliminates overwriting of previous logs. The data collected during the running of an experiment is also saved in a similar format and organization as the hardware logs. The experiment
+file is created automatically on the start of an experiment. Note, the experiment log is separate from the experiment file (.xml), which is the configuration file for the experiment. The experiment log is a record of the calculations and the experiment progress and is mostly used for debugging and troubleshooting. The start and stop values for an
 experiment are saved in the experiment file (.xml) as runs.
 
 == Versions ==
