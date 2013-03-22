@@ -427,17 +427,17 @@
 				<Property Name="Bld_buildSpecName" Type="Str">Application</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/bin</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/Application</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{CADF73E4-CF35-4666-BFE1-F2BBCD95C93C}</Property>
 				<Property Name="Destination[0].destName" Type="Str">ABLE.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/bin/NI_AB_PROJECTNAME.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/Application/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/bin/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/Application/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{7B1C59E6-063B-4731-A167-6B688C8B5133}</Property>
@@ -479,7 +479,7 @@
 				<Property Name="Exe_actXServerName" Type="Str">ABLE</Property>
 				<Property Name="Exe_actXServerNameGUID" Type="Str">{B3F2AD32-06B7-4735-B774-FFF78D98E675}</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/images/ABLE_Icon.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{766EC1FF-6FC0-46DA-80EE-80D868AC955F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C6F90D20-DB0F-4883-AF24-0E51B0203E9A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
@@ -489,102 +489,19 @@
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/configs</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[3].itemID" Type="Ref"></Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/images</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="Source[4].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/images</Property>
-				<Property Name="Source[4].type" Type="Str">Container</Property>
-				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/VIs/Main.vi</Property>
-				<Property Name="Source[5].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[5].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">6</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/VIs/Main.vi</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">ABLE</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2013 Christopher R. Field</Property>
 				<Property Name="TgtF_productName" Type="Str">Advanced Beam Line Electronics</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str"></Property>
 				<Property Name="TgtF_targetfileName" Type="Str">ABLE.exe</Property>
-			</Item>
-			<Item Name="Installer-Bin" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">ABLE</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">1</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{01C0F5DE-BF22-43B9-B7D9-7915B32F71F1}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2012 f3</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{20385C41-50B1-4416-AC2A-F7D6423A9BD6}</Property>
-				<Property Name="DistPartCount" Type="Int">1</Property>
-				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../trunk/builds/Installer-bin</Property>
-				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">Installer-Bin</Property>
-				<Property Name="INST_defaultDir" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="INST_productName" Type="Str">ABLE</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
-				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">12018007</Property>
-				<Property Name="MSI_arpCompany" Type="Str">University of Wisconsin - Madison</Property>
-				<Property Name="MSI_arpURL" Type="Str">http://www.wisc.edu</Property>
-				<Property Name="MSI_distID" Type="Str">{D312B140-227D-4D96-B709-6C8C6E8B731A}</Property>
-				<Property Name="MSI_osCheck" Type="Int">0</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{5CFA9238-4F1E-4D3D-B094-BBA8D456EB76}</Property>
-				<Property Name="MSI_windowMessage" Type="Str">Welcome to the Advance Beam Line Electronics (ABLE) Installer.</Property>
-				<Property Name="MSI_windowTitle" Type="Str">Advanced Beam Line Electronics</Property>
-				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
-				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
-				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
-				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">ABLE.exe</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">ABLE</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">ABLE</Property>
-				<Property Name="Source[0].File[0].Shortcut[1].destIndex" Type="Int">1</Property>
-				<Property Name="Source[0].File[0].Shortcut[1].name" Type="Str">ABLE1</Property>
-				<Property Name="Source[0].File[0].Shortcut[1].subDir" Type="Str"></Property>
-				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
-				<Property Name="Source[0].File[0].tag" Type="Str">{5086873D-C6D0-41D7-90C5-4C0EDB5E5AEF}</Property>
-				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">Application</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Application</Property>
-				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="Source[1].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[1].File[0].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[1].File[0].name" Type="Str">ABLE.ini</Property>
-				<Property Name="Source[1].File[0].tag" Type="Ref">/My Computer/configs/ABLE.ini</Property>
-				<Property Name="Source[1].FileCount" Type="Int">1</Property>
-				<Property Name="Source[1].name" Type="Str">configs</Property>
-				<Property Name="Source[1].tag" Type="Ref">/My Computer/configs</Property>
-				<Property Name="Source[1].type" Type="Str">Folder</Property>
-				<Property Name="Source[2].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[2].File[0].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[2].File[0].name" Type="Str">ABLE Input List.xls</Property>
-				<Property Name="Source[2].File[0].tag" Type="Ref">/My Computer/docs/ABLE Input List.xls</Property>
-				<Property Name="Source[2].FileCount" Type="Int">1</Property>
-				<Property Name="Source[2].name" Type="Str">docs</Property>
-				<Property Name="Source[2].tag" Type="Ref">/My Computer/docs</Property>
-				<Property Name="Source[2].type" Type="Str">Folder</Property>
-				<Property Name="Source[3].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[3].File[0].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[3].File[0].name" Type="Str">ABLE_Graphic.jpg</Property>
-				<Property Name="Source[3].File[0].tag" Type="Ref">/My Computer/images/ABLE_Graphic.jpg</Property>
-				<Property Name="Source[3].FileCount" Type="Int">1</Property>
-				<Property Name="Source[3].name" Type="Str">images</Property>
-				<Property Name="Source[3].tag" Type="Ref">/My Computer/images</Property>
-				<Property Name="Source[3].type" Type="Str">Folder</Property>
-				<Property Name="Source[4].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[4].File[0].dest" Type="Str">{9AA9DC9C-F03D-4CD3-B908-BAE40EF2CEA0}</Property>
-				<Property Name="Source[4].File[0].name" Type="Str">2013-01-10~14-13-34.csv</Property>
-				<Property Name="Source[4].File[0].tag" Type="Ref"></Property>
-				<Property Name="Source[4].FileCount" Type="Int">1</Property>
-				<Property Name="Source[4].name" Type="Str">logs</Property>
-				<Property Name="Source[4].tag" Type="Ref"></Property>
-				<Property Name="Source[4].type" Type="Str">Folder</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
 			</Item>
 		</Item>
 	</Item>
