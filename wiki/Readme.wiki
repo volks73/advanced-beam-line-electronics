@@ -38,7 +38,7 @@ The application can be downloaded as a pre-built ZIP file from the project websi
 
 ==== From Source ====
 
- # Follow the procedure to build the application in [Build] section
+ # Follow the procedure to build the application in Build section
  # Copy the contents of the "builds" folder to any public location on the hard disk.
  # Create a link or shortcut to the "ABLE.exe" file and place it on the desktop or in the start menu.
 
