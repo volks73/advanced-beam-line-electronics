@@ -73,6 +73,18 @@ A configuration file (.ini) is used to configure settings for the ABLE applicati
 || Folders || srim-simulation || OS-specific File Path || The default folder where srim-simulation files are located. || 
 || Alarms || temperature-alarm-sound-file || OS-specific path || The sound file to play when a temperature alarm is activated. ||
 || Alarms || temperature-alarm-sound-delay || Integer 0-N. || The delay between repeated plays of the temperature alarm sound. The sound will continue to play until the alarm conditions have failed or the alarm is turned off. This value should be adjusted so that the alarm sound is not continuously playing. _N_ is in seconds. The length of time of the sound should be taken into consideration. ||
+|| Keithley-6485 || gpib-ids || String || A comma separated list of GPIB IDs for all connected 6485 picoamp meters. ||
+|| Keithley-6485 || gpib-board-ids || String || A comma separated list of GPIB board IDs for all connected 6485 picoamp meters. The number of GPIB IDs and Board IDs must match. ||
+|| Keithley-6485 || display-on || Boolean (_True_ or _False_) || If _True_, then the readings will also be displayed on the screen of the picoamp meter, but this will result in slightly slower readings. If _False_, then the screen will be disabled on the picoamp meter, and faster sample rates can be achieved. ||
+|| Keithely-6485 || integration-rates || String || A comma separated list of decimal values of the integration rates for all connected 6485 picoamp meters.  Larger integration rates results in smoother data, but reduced speed. ||
+|| Keithley-6485 || auto-range-on || String || A comma separated list of boolean (_True_ or _False_) values. If _True_, then the autorange will be enabled, but sampling rate will be reduced. If _False_, then the range will be have to be set manually and faster sampling can occur. ||
+|| Keithley-6485 || range || String || A comma separated list of decimal values in scientific notation that indicate the expected reading value and sets the range. This value is ignored if autoranging is enabled. ||
+|| Keithley-6482 || gpib-ids || String || A comma separated list of GPIB IDs for all connected 6482 picoamp meters. ||
+|| Keithley-6482 || gpib-board-ids || String || A comma separated list of GPIB board IDs for all connected 6482 picoamp meters. The number of GPIB IDs and Board IDs must match. ||
+|| Keithley-6482 || display-on || Boolean (_True_ or _False_) || If _True_, then the readings will also be displayed on the screen of the picoamp meter, but this will result in slightly slower readings. If _False_, then the screen will be disabled on the picoamp meter, and faster sample rates can be achieved. ||
+|| Keithely-6482 || integration-rates || String || A comma separated list of decimal values of the integration rates for all connected 6482 picoamp meters.  Larger integration rates results in smoother data, but reduced speed. ||
+|| Keithley-6482 || auto-range-on || String || A comma separated list of boolean (_True_ or _False_) values. If _True_, then the autorange will be enabled, but sampling rate will be reduced. If _False_, then the range will be have to be set manually and faster sampling can occur. ||
+|| Keithley-6482 || range || String || A comma separated list of decimal values in scientific notation that indicate the expected reading value and sets the range. This value is ignored if autoranging is enabled. ||
 
 == Logs ==
 
